@@ -14,7 +14,31 @@ turn the new array into a string and return it.
 
 
 function reverseWords(sentence){
+    const sentArray = sentence.split(' ')
+    let backwordsWord = []
+   
+
+
+    for (let i = 0; i < sentArray.length; i++){
+        const word = sentArray[i]
+        const wordArray = word.split('')
+        let newWord = []
+    
+        for (let j = wordArray.length -1; j >= 0; j--){
+            const letter = wordArray[j]
+            newWord.push(letter)
+
+        }
+        const newStringWord = newWord.join('')
+        backwordsWord.push(newStringWord)
+        
+    }
+    const res = backwordsWord.join(' ')
+    return res;
+
 
 }
+
+console.log(reverseWords('this is a test word and sentence'))
 
 module.exports = reverseWords;

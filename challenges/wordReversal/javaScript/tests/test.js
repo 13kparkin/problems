@@ -9,7 +9,7 @@ describe('Word Reversal', () => {
   // Test case 1
   it('Should reverse words in a sentence', () => {
     const result = reverseWords("Hello World! How are you?");
-    assert.equal(result, "olleH dlroW! woH era ?uoy");
+    assert.equal(result, "olleH !dlroW woH era ?uoy");
   });
 
   // Test case 2
